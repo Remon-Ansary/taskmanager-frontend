@@ -10,6 +10,8 @@ A React-based frontend application for managing tasks, built with Ant Design. It
 - **Overdue Tasks:** Access a list of tasks past their due date.
 - **Responsive Design:** Optimized for desktop and mobile devices.
 
+-- ** Sample Nginx configuration file in nginxfile.txt
+
 ## Technologies Used
 
 - **React**
