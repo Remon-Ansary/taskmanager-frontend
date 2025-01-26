@@ -18,7 +18,6 @@ A React-based frontend application for managing tasks, built with Ant Design. It
 - **Axios**
 - **Moment.js**
 - **Docker**
-- **Nginx**
 
 ## Installation
 
