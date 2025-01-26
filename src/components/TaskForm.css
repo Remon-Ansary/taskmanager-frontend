@@ -1,0 +1,25 @@
+/* src/components/TaskForm.css */
+
+.task-form-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.task-form-spin {
+  text-align: center;
+  padding: 50px;
+}
+
+@media (max-width: 576px) {
+  .task-form-card {
+    padding: 12px;
+  }
+
+  .ant-form-item-label > label {
+    font-size: 1rem;
+  }
+
+  .ant-btn {
+    width: 100%;
+  }
+}
