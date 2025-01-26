@@ -1,4 +1,3 @@
-// src/components/OverdueTask.js
 import React, { useEffect, useState, useCallback } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
@@ -76,11 +75,7 @@ const OverdueTask = () => {
       key: "due_date",
       render: (text) => new Date(text).toLocaleDateString(),
     },
-    {
-      title: "User",
-      dataIndex: "user",
-      key: "user",
-    },
+   
     {
       title: "Actions",
       key: "actions",

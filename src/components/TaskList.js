@@ -1,4 +1,3 @@
-// src/components/TaskList.js
 import React, { useEffect, useState, useCallback } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
@@ -81,7 +80,7 @@ const TaskList = () => {
         { text: "Completed", value: "Completed" },
       ],
       onFilter: (value, record) => record.status === value,
-      responsive: ["sm", "md", "lg", "xl"],
+      responsive: ["xs", "sm", "md", "lg", "xl"],
     },
     {
       title: "Due Date",
@@ -89,7 +88,7 @@ const TaskList = () => {
       key: "due_date",
       sorter: (a, b) => new Date(a.due_date) - new Date(b.due_date),
       render: (text) => new Date(text).toLocaleDateString(),
-      responsive: ["md", "lg", "xl"],
+      responsive: ["xs", "sm", "md", "lg", "xl"],
     },
     {
       title: "Actions",
@@ -135,7 +134,7 @@ const TaskList = () => {
             <Option value="Completed">Completed</Option>
           </Select>
         </Col>
-        <Col xs={12} sm={12} md={12} style={{ textAlign: "right" }}>
+        <Col xs={24} sm={12} md={12} style={{ textAlign: "right" }}>
           <Button
             type="primary"
             icon={<PlusOutlined />}

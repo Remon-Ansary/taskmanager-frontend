@@ -1,4 +1,3 @@
-/* src/components/TaskList.css */
 
 .task-list-container {
   padding: 24px;
@@ -15,11 +14,16 @@
 }
 
 @media (max-width: 576px) {
+  /* Stack the buttons vertically and add spacing */
   .create-task-button,
   .overdue-task-button {
-    width: 150px; /* Fixed width on mobile */
-    margin-right: 0;
+    width: 100%; /* Full width on mobile */
     margin-top: 8px;
+  }
+
+  /* Add space between the two buttons */
+  .create-task-button {
+    margin-bottom: 8px; /* Space below "Create New Task" */
   }
 
   .task-list-container {
@@ -32,17 +36,24 @@
   }
 
   .ant-row {
-    flex-direction: row; /* Keep side by side */
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch; /* Stretch to full width */
   }
 
   .ant-col {
     text-align: center !important;
   }
 
-  .create-task-button,
-  .overdue-task-button {
-    margin-top: 0;
+  /* Reduce the size of "View" and "Delete" buttons in the table */
+  .ant-table .ant-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 4px;
+  }
+
+  /* Optional: Adjust the table's padding for better mobile view */
+  .ant-table {
+    padding: 0 8px;
   }
 }
 
